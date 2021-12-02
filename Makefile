@@ -4,6 +4,9 @@ all: build
 .PHONY: build
 build: build-act build-goreleaser
 
+release: build-goreleaser
+	./bin/goreleaser release --rm-dist
+
 .PHONY: build-act
 build-act: ./bin/act
 	./bin/act -j build
@@ -13,6 +16,7 @@ build-goreleaser: ./bin/goreleaser
 
 ./bin/act:
 	GOBIN=${PWD}/bin go install github.com/nektos/act@latest
+
 ./bin/goreleaser:
 	GOBIN=${PWD}/bin go install github.com/goreleaser/goreleaser@latest
 
