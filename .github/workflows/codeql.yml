@@ -1,15 +1,20 @@
 name: "Daily Code Scanning - Action"
 
 on:
-  workflow_dispatch:
   schedule:
     - cron: '0 0 * * 0'
 
 jobs:
   CodeQL-Build:
+
+    # strategy:
+    #   fail-fast: false
+
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout repository
+      uses: actions/checkout@v2
 
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v1
