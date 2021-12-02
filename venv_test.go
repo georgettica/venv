@@ -1,10 +1,11 @@
 package venv
 
 import (
-	"github.com/adammck/venv/mock"
-	"github.com/adammck/venv/os"
-	"github.com/stretchr/testify/assert"
 	"testing"
+
+	"github.com/georgettica/venv/mock"
+	"github.com/georgettica/venv/os"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestOS(t *testing.T) {

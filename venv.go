@@ -1,8 +1,8 @@
 package venv
 
 import (
-	"github.com/adammck/venv/mock"
-	"github.com/adammck/venv/os"
+	"github.com/georgettica/venv/mock"
+	"github.com/georgettica/venv/os"
 )
 
 type Env interface {
