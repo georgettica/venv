@@ -1,7 +1,6 @@
 # venv
 
-[![GoDoc](https://godoc.org/github.com/adammck/venv?status.svg)](https://godoc.org/github.com/adammck/venv)
-[![Build Status](https://travis-ci.org/adammck/venv.svg?branch=master)](https://travis-ci.org/adammck/venv)
+[![GoDoc](https://godoc.org/github.com/georgettica/venv?status.svg)](https://godoc.org/github.com/georgettica/venv)
 
 This is a Go library to abstract access to environment variables.  
 Like [spf13/afero][afero] or [blang/vfs][vfs], but for the env.
@@ -35,6 +34,3 @@ func main() {
 ## License
 
 MIT.
-
-[afero]: https://github.com/spf13/afero
-[vfs]: https://github.com/blang/vfs
