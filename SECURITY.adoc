@@ -1,0 +1,9 @@
+= Security Policy
+
+== Supported Versions
+
+I try and fix in the latest, if there is an issue with a previous version let me know and I will create a patchfix for it
+
+== Reporting a Vulnerability
+
+PR's and Issues are welcome, but you can also email me at 11993626+georgettica@users.noreply.github.com
