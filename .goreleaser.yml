@@ -30,3 +30,12 @@ changelog:
     exclude:
       - '^docs:'
       - '^test:'
+signs:
+- artifacts: all
+  args:
+  - "--pinentry-mode"
+  - "loopback"
+  - "--output"
+  - "${signature}"
+  - "--detach-sign"
+  - "${artifact}"
